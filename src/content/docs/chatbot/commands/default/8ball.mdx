@@ -1,15 +1,15 @@
 ---
 title: "!8ball"
-description: "Ask the StreamElements chatbot a question with the !8ball command and receive a random, magic 8-ball style answer."
+description: "Ask the StreamElements chatbot a question with the !8ball command and receive a random, magic 8-ball style answer without an introductory phrase."
 platforms: [twitch, youtube, kick]
 access: everyone
-summary: "Receive a random magic 8-ball style answer to a question."
+summary: "Receive a random magic 8-ball style answer directly, without an introductory phrase."
 requires: 8ball module
 category: fun-emotes
 aliases:
   - "!eightball"
   - "!69ball"
-  - "!420ball"
+  - "!8"
 keywords:
   - 8ball command
   - magic 8 ball chatbot
@@ -21,11 +21,11 @@ keywords:
 
 import ChatExample from '@components/ChatExample.astro';
 
-The `!8ball` command simulates a magic 8-ball toy: ask it a question and it answers with a random verdict.
+The `!8ball` command simulates a magic 8-ball toy: ask it a question and it answers with a random verdict. The chatbot displays only the answer itself, without any introductory phrase such as "The 8-ball says...".
 
 ## Usage
 
-To use the command, type `!8ball` followed by an optional question in the chat. The chatbot will respond with a random fortune-like answer.
+To use the command, type `!8ball` followed by an optional question in the chat. The chatbot will respond directly with a random fortune-like answer, without any introductory text.
 
 ```streamelements
 !8ball [question]
@@ -49,7 +49,9 @@ The `[question]` part is entirely optional and does not influence the random out
 
 Enable the 8ball module under `Chatbot` -> `Modules`, where you can also customize the list of possible responses the command draws from.
 
+For a clean response, configure the command to display only the randomly selected answer, without adding "The 8-ball says..." or any other introductory text.
+
 ## Related Commands
 
-*   [`!roulette`](/chatbot/commands/default/roulette): Gamble loyalty points for a chance to win or lose.
-*   [`!slots`](/chatbot/commands/default/slots): Play a slot machine game with loyalty points.
+* [`!roulette`](/chatbot/commands/default/roulette): Gamble loyalty points for a chance to win or lose.
+* [`!slots`](/chatbot/commands/default/slots): Play a slot machine game with loyalty points.
